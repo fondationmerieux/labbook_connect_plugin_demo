@@ -16,7 +16,7 @@ public class Connect_util {
 	 * @return ack, message in hl7 format if OK.
 	 */
 	public static String send_hl7_msg(Analyzer analyzer, String url_upstream, String hl7_msg) {
-		/** Define in Connect module */
+		/** Defined in Connect module */
 		return "";
 	}
 
