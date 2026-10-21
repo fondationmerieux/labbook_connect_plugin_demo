@@ -1,3 +1,16 @@
+> **Deprecated.** This plugin follows the plugin architecture of 2023 and no longer
+> builds against the current LabBook Connect: the Analyzer interface has changed since.
+> Do not use it as a starting point for a new plugin.
+
+## Where to look instead
+
+- The training material of LabBook Connect, in
+  [doc/formation_LabBook_Connect](https://github.com/fondationmerieux/labbook_connect/tree/master/doc/formation_LabBook_Connect),
+  which describes the plugin contract, the configuration files and the ASTM and HL7 plugins.
+- The plugins in use, as examples:
+  [GeneXpert](https://github.com/fondationmerieux/labbook_connect_plugin_genexpert) and
+  [Sysmex](https://github.com/fondationmerieux/labbook_connect_plugin_sysmex).
+
 # Project
 
 LabBook Connect Plugin Demo is a demo analyzer plugin for [LabBook Connect](https://github.com/fondationmerieux/labbook_connect).
@@ -37,15 +50,6 @@ git clone https://github.com/fondationmerieux/labbook_connect_plugin_demo.git
 ~~~
 
 Copy the `AnalyzerDemo.jar` file into the `plugin` directory of the LabBook Connect project.
-
-## Plugin API
-
-The plugin must implement the interface described in the `src/plugin/Analyzer.java` file.
-Please see the comments in the [file](src/plugin/Analyzer.java) for details.
-
-The plugin can use the functions whose signatures are provided in the `src/plugin/Connect_util.java`
-[file](src/plugin/Connect_util.java) to communicate with LabBook Connect.
-Please see the LabBook Connect project for the implementation of these functions.
 
 # Changes
 
